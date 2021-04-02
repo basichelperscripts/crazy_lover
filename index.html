@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Tell Lord you love him 1000 times</title>
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<section>
+    <p>
+        From within your spirit you have to tell the Lord a 1000 times a day, "Lord Jesus, I  love You."
+        The name of Jesus is the sweetest name on earth. By telling the Lord that you love Him, you
+        spontaneously give more space, more room, within you to Jesus.
+    </p>
+    <button class="btn" onclick="incrementValue()" value="Increment Value">Lord, Jesus I love you</button>
+    <br />
+    <span class="numTimes">
+        <label id="counter">0</label> times
+    </span>
+</section>
+<script>
+    function incrementValue()
+    {
+        var value = parseInt(document.getElementById('counter').innerHTML, 10);
+        console.log("value");
+        console.log(value);
+        value = isNaN(value) ? 0 : value;
+        value++;
+        document.getElementById('counter').innerHTML = value;
+    }
+</script>
+</body>
+</html>
