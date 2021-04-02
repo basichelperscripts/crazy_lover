@@ -14,7 +14,7 @@
     <button class="btn" onclick="incrementValue()" value="Increment Value">Lord, Jesus I love you</button>
     <br />
     <span class="numTimes">
-        <label id="counter">0</label> times
+        <label id="counter">0</label> <span id="timesDesc">times</span>
     </span>
 </section>
 <script>
@@ -24,7 +24,9 @@
         console.log("value");
         console.log(value);
         value = isNaN(value) ? 0 : value;
+        var describer = document.getElementById('timesDesc');
         value++;
+        value === 1 ? describer.innerHTML = "time" : describer.innerHTML = "times";
         document.getElementById('counter').innerHTML = value;
     }
 </script>
