@@ -16,6 +16,7 @@
     <span class="numTimes">
         <label id="counter">0</label> <span id="timesDesc">times</span>
     </span>
+    <span id="message"></span>
 </section>
 <script>
     function incrementValue()
@@ -27,6 +28,7 @@
         var describer = document.getElementById('timesDesc');
         value++;
         value === 1 ? describer.innerHTML = "time" : describer.innerHTML = "times";
+        if (value === 1000) document.getElementById('message').innerHTML = "Hallelujah"
         document.getElementById('counter').innerHTML = value;
     }
 </script>
